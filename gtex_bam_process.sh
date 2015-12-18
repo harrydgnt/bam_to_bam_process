@@ -96,16 +96,10 @@ echo "python /u/home/h/harryyan/project-eeskin/repeat/gprofile/gprofilePE.py --r
 echo "num_unmapped=\$(samtools view -c -fox4 ${dumpdir}/${ext_item_name}/${item})">>run_${itemname}.sh
 echo "num_total=\$(samtools view -c ${dumpdir}/${ext_item_name}/${item})">>run_${itemname}.sh
 echo "echo "\${num_unmapped}	\${num_total}">>${dumpdir}/unmapped_ratio.txt">>run_${itemname}.sh
-#
 
 
-
-
-
-
-
-echo "rm ${dumpdir}/${ext_item_name}/${ext_item_name}.unmapped.bam">>run_${itemname}.sh
-echo "rm ${dumpdir}/${ext_item_name}/${ext_item_name}.unmapped.bam.bai">>run_${itemname}.sh
+#echo "rm ${dumpdir}/${ext_item_name}/${ext_item_name}.unmapped.bam">>run_${itemname}.sh
+#echo "rm ${dumpdir}/${ext_item_name}/${ext_item_name}.unmapped.bam.bai">>run_${itemname}.sh
 echo "rm ${dumpdir}/${ext_item_name}/$item">>run_${itemname}.sh
 
 
